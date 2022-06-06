@@ -57,7 +57,7 @@ def menu():
             print("You have selected make a purchase")
             purchase_item()
         elif ans == '0':
-            print("You have exited the program.")
+            print("Thank you for shopping with us!!!.")
             break
         else:
             print("Please enter a valid selection")
