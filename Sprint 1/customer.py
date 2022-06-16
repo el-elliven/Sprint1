@@ -1,6 +1,5 @@
 import csv
 
-
 # classes
 class Customer:
     def __init__(self, id, name, address):
@@ -16,20 +15,17 @@ def all_customers():
             print(row)
 
 
-# def check_ID(id):
-#     with open('customers.csv') as fp:
-#         csv_reader = csv.reader(fp)
-#         data = list(csv_reader)
-#         data_list2 = [item[0] for item in data]
-#         for i in range(len(data_list2)):
-#             if id == data_list2[i]:
-#                print(data_list2[i])
-#                print("Customer exists")
-#             elif id != data_list2[i]:
-#                 return print("Customer doesn't exist")
-# # check_ID(3)
+def check_ID():
+    with open('customers.csv') as fp:
 
-# new_customers = ['27', 'Keith', 'Thika']
+        search_id = input("Enter ID to search:\n")
+
+        for line in fp:
+            if search_id in line:
+                v = line.split(",")
+                if v[0] == search_id:
+                    print(line)
+                    
 
 def delete_customer():
     with open('customers.csv', 'r+') as file:
@@ -88,3 +84,6 @@ def update_customer():
             wr.writerow(update_customer_list)
 
             # update_customer()
+
+if __name__ == "__main__":
+    add_customer()

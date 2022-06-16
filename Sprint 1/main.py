@@ -1,7 +1,7 @@
 from customer import all_customers, delete_customer, add_customer, update_customer
 from products import all_products, add_product, delete_product, update_product
 
-from purchase import purchase_item
+from purchase import *
 
 
 def menu():
@@ -63,5 +63,5 @@ def menu():
             print("Please enter a valid selection")
             continue
 
-
-menu()
+if __name__ == "__main__":
+    menu()

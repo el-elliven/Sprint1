@@ -1,7 +1,8 @@
 Id, name, amount, price
-368, TV,9, 300
-909, Laptop,16,1000
-1,google pixel,0,220
-34,pixel ,3,600.0
-100,Flour,170,120.0
-592,Phone,50,20000
+368, TV,500, 300
+909, Laptop,160,1000
+1,google pixel,154,220
+34,pixel ,300,600.0
+100,Flour,1660,120.0
+592,Phone,470,20000
+3,Mifi,100,3500
